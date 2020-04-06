@@ -16,7 +16,7 @@ for (var i = 0; i < listofFileNames.length; i++) {
 // Sizing of circle
 var width = window.innerWidth
 height = window.innerHeight
-radius = window.innerHeight - 400;
+radius = window.innerHeight - 800;
 
 var partition = d3.layout.partition() // Using partition-style data analysis
     .size([2 * Math.PI, radius])
