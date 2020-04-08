@@ -143,9 +143,9 @@ function updateDrawing(fileName) {
         .enter().append("circle")
         .attr("transform", d => "translate(" + d.x + "," + d.y + ")")
         .attr("r", d => d.r)
-        .style("fill", "white")
+        .style("fill", "#DEEAF5")
         .style("stroke", d => d.error ? "#f7c84a" : "transparent")
-        .style("stroke-width", 3);
+        .style("stroke-width", 0);
 
     // Color Dictionary that determines consecutive color
     d3.json(fileName, function (error, root) {
